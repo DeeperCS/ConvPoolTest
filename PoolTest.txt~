@@ -1,0 +1,9 @@
+input dim: 3
+
+kernel: 2
+stride: 2
+
+feature got: 2
+分析:
+pooling会自动pad
+

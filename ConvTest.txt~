@@ -1,0 +1,11 @@
+input dim: 3
+
+kernel: 2
+stride: 2
+pad:0
+
+feature got: 1
+分析:
+(3-2)/2+1 = 1
+表明并不会自动pad
+

@@ -1,0 +1,23 @@
+name: 'EuclideanExample'
+layer {
+  type: 'DummyData'
+  name: 'x'
+  top: 'x'
+  dummy_data_param {
+    shape: { dim: 1 dim: 1 dim: 5 dim: 5 }
+    data_filler: { type: 'gaussian' }
+  }
+}
+
+
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "x"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 4
+    stride: 4
+  }
+}
